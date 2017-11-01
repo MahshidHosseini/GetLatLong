@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LatLongModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Accommodation2">
+    <Key>
+      <PropertyRef Name="AccommodationlID" />
+    </Key>
+    <Property Name="AccommodationlID" Type="bigint" Nullable="false" />
+    <Property Name="ChainID" Type="bigint" />
+    <Property Name="AirportCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Type" Type="tinyint" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rating" Type="nvarchar" MaxLength="10" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="PostCodeZip" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Near" Type="nvarchar" MaxLength="255" />
+    <Property Name="lastUpdate" Type="datetime" />
+    <Property Name="CountryCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="300" />
+    <Property Name="CityId" Type="bigint" />
+    <Property Name="Resort" Type="nvarchar" MaxLength="300" />
+    <Property Name="Region" Type="nvarchar" MaxLength="300" />
+    <Property Name="DestinationId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Destination" Type="nvarchar" MaxLength="250" />
+    <Property Name="Country" Type="nvarchar" MaxLength="50" />
+    <Property Name="HotelArea" Type="nvarchar" MaxLength="500" />
+    <Property Name="HotelImages" Type="varchar" MaxLength="5000" />
+    <Property Name="HotelLocation" Type="nvarchar" MaxLength="500" />
+    <Property Name="HotelInfo" Type="varchar" MaxLength="5000" />
+    <Property Name="PAmenities" Type="varchar" MaxLength="5000" />
+    <Property Name="Email" Type="varchar" MaxLength="5000" />
+    <Property Name="Url" Type="varchar" MaxLength="5000" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="DateVerified" Type="datetime" />
+    <Property Name="IsVerified" Type="bit" />
+    <Property Name="IsError" Type="bit" />
+    <Property Name="LocationName" Type="nvarchar" MaxLength="300" />
+    <Property Name="LocationNameLong" Type="nvarchar" MaxLength="800" />
+    <Property Name="Lat" Type="nvarchar" MaxLength="4000" />
+    <Property Name="Lng" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="logHotel">
+    <Key>
+      <PropertyRef Name="userLogID" />
+    </Key>
+    <Property Name="userLogID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HotelID" Type="bigint" />
+    <Property Name="exeption" Type="nvarchar" MaxLength="500" />
+    <Property Name="line" Type="nvarchar(max)" />
+    <Property Name="line1" Type="text" />
+  </EntityType>
+  <EntityContainer Name="LatLongModelStoreContainer">
+    <EntitySet Name="Accommodation2" EntityType="Self.Accommodation2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="logHotel" EntityType="Self.logHotel" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

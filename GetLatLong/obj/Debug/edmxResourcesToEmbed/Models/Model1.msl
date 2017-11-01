@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LatLongModelStoreContainer" CdmEntityContainer="LatLongEntities1">
+    <EntitySetMapping Name="Accommodation2">
+      <EntityTypeMapping TypeName="LatLongModel.Accommodation2">
+        <MappingFragment StoreEntitySet="Accommodation2">
+          <ScalarProperty Name="AccommodationlID" ColumnName="AccommodationlID" />
+          <ScalarProperty Name="ChainID" ColumnName="ChainID" />
+          <ScalarProperty Name="AirportCode" ColumnName="AirportCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PostCodeZip" ColumnName="PostCodeZip" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Near" ColumnName="Near" />
+          <ScalarProperty Name="lastUpdate" ColumnName="lastUpdate" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="Resort" ColumnName="Resort" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="DestinationId" ColumnName="DestinationId" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="HotelArea" ColumnName="HotelArea" />
+          <ScalarProperty Name="HotelImages" ColumnName="HotelImages" />
+          <ScalarProperty Name="HotelLocation" ColumnName="HotelLocation" />
+          <ScalarProperty Name="HotelInfo" ColumnName="HotelInfo" />
+          <ScalarProperty Name="PAmenities" ColumnName="PAmenities" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DateVerified" ColumnName="DateVerified" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsError" ColumnName="IsError" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationNameLong" ColumnName="LocationNameLong" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Lng" ColumnName="Lng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logHotel">
+      <EntityTypeMapping TypeName="LatLongModel.logHotel">
+        <MappingFragment StoreEntitySet="logHotel">
+          <ScalarProperty Name="userLogID" ColumnName="userLogID" />
+          <ScalarProperty Name="HotelID" ColumnName="HotelID" />
+          <ScalarProperty Name="exeption" ColumnName="exeption" />
+          <ScalarProperty Name="line" ColumnName="line" />
+          <ScalarProperty Name="line1" ColumnName="line1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
